@@ -1,9 +1,7 @@
 
-// import java.beans.Statement;
+
 import java.sql.*;
 import java.util.Scanner;
-// import com.mysql.cj.jdbc.Driver;
-
 public class App {
     public static void main(String[] args) {
         int choices = 0;
@@ -49,9 +47,6 @@ public class App {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/SMS", "root", "Akartik@121");
             Statement st = (Statement) con.createStatement();
             ResultSet rs = ((java.sql.Statement) st).executeQuery("Select * from login");
-            // if any error occur see this line just remove the do while with while loop and
-            // initialise the id1="" and pass=""
-
             while (rs.next()) {
                 id1 = rs.getString(1);
                 pass = rs.getString(2);
