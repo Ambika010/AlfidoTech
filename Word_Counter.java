@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Word_Counter {
     public static void main(String[] args) {
         System.out.println("Enter String");
